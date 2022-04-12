@@ -1,0 +1,23 @@
+{
+  "name": "sayeditcontent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "dingir-win.exe run ./test/index.ts",
+    "build": "dingir-win.exe build ./src/index.ts ./build/example.dg -e discord.js --debug saitama"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/builders": "^0.13.0-dev.1646913825.dcd4797",
+    "discord.js": "^14.0.0-dev.1646914074.dcd4797",
+    "typeorm": "^0.2.45"
+  },
+  "dingir": {
+    "libraries": {
+      "discord": "0.4.4"
+    }
+  }
+}
