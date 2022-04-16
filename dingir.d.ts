@@ -161,8 +161,8 @@ declare function isClass(obj: unknown): boolean;
 declare type IsFunction<T> = T extends Function_2.Any ? true : false;
 
 /** @public */
-declare type JSONValue = string | number | boolean | null | JSONValue[] | {
-    [key: string]: JSONValue;
+declare type JSONValue<T = undefined> = string | number | boolean | null | T | Array<JSONValue<T>> | {
+    [key: string]: JSONValue<T>;
 };
 
 /** @public */
@@ -203,6 +203,7 @@ declare class LoggerService {
         stdout?: (NodeJS.WriteStream & {
             fd: 1;
         }) | undefined;
+        logs?: boolean | undefined;
         logFilePath?: string | undefined;
         label?: string | undefined;
     } | undefined);
