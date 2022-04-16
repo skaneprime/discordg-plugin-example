@@ -1,4 +1,4 @@
-import * as Discord from "../dingir_libs/discord@0.4.3";
+import * as Discord from "../dingir_libs/discord@0.4.4";
 
 export default Discord.Plugins.createPlugin(
     async function Example({ client }) {
